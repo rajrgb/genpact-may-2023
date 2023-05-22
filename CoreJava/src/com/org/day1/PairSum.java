@@ -3,7 +3,37 @@ package com.org.day1;
 import java.util.*;
 
 public class PairSum {
-public void solve(List<Integer> arr, int sum) {
+private List<Integer> arr;
+int sum;
+
+public List<Integer> getArr() {
+	return arr;
+}
+
+public void setArr(List<Integer> arr) {
+	this.arr = arr;
+}
+
+public int getSum() {
+	return sum;
+}
+
+public void setSum(int sum) {
+	this.sum = sum;
+}
+
+public PairSum() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+
+public PairSum(List<Integer> arr, int sum) {
+	super();
+	this.arr = arr;
+	this.sum = sum;
+}
+
+public void solve() {
 	int i=0;
 	Collections.sort(arr);
 	for(int a:arr) {
