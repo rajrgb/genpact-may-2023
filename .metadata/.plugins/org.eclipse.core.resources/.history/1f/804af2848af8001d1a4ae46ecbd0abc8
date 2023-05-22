@@ -1,0 +1,18 @@
+package com.org.day1;
+
+import java.util.*;
+
+public class PairSum {
+public void solve(List<Integer> arr, int sum) {
+	int i=0;
+	Collections.sort(arr);
+	for(int a:arr) {
+		int b=sum-a;
+		int index=Collections.binarySearch(arr, b);
+		if(index!=i&&index>=0) {
+			System.out.println("Two elements whose sum= "+sum+" are "+a+" and "+b);
+	}
+		i++;
+	}
+}
+}
